@@ -1,0 +1,40 @@
+{
+  "name": "react-client-boilerplate",
+  "version": "0.0.1",
+  "author": "Broch Stilley <brochington@gmail.com> (http://github.com/brochington)",
+  "description": "A basic boilerplate for react apps.",
+  "main": "index.js",
+  "scripts": {
+    "build:dev": "rimraf ./dist && NODE_ENV=development webpack --config webpack.config.dev.js --display-error-details",
+    "setup": "npm cache clear && rimraf ./node_modules && rimraf ./dist && npm install",
+    "dev": "node server.dev.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brochington/react-client-boilerplate.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brochington/react-client-boilerplate/issues"
+  },
+  "homepage": "https://github.com/brochington/react-client-boilerplate#readme",
+  "dependencies": {
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.5",
+    "express": "^4.14.0",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.17.0",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "react-hot-loader": "^3.0.0-beta.2",
+    "rimraf": "^2.5.4",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.16.2",
+    "webpack-hot-middleware": "^2.13.0"
+  }
+}
